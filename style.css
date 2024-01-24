@@ -24,7 +24,43 @@ body{
 
 }
 
+body, button {
+    font-family: 'Roboto', sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .timer{
     font-size: 9.6rem;
     font-weight: bold;
+}
+
+.controls{
+    margin-top: 1.6rem;
+    padding: 2.2rem 4rem;
+    gap: 1.6rem;
+    background-color: var(--controls-bg-color);
+    border-radius: 999rem;
+}
+
+.controls button {
+    background-color: transparent;
+    border: 0;
+    color: var(--primary-color);
+
+    cursor: pointer;
+    font-size: 6.4rem;
+}
+
+.controls .secondary{
+    color: var(--text-color);
 }
