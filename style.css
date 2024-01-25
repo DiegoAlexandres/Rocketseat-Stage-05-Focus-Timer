@@ -50,6 +50,7 @@ body, button {
     gap: 1.6rem;
     background-color: var(--controls-bg-color);
     border-radius: 999rem;
+
 }
 
 .controls button {
@@ -63,4 +64,14 @@ body, button {
 
 .controls .secondary{
     color: var(--text-color);
+}
+
+.running .ph-play-circle,
+.running .ph-timer,
+.running .ph-speaker-none,
+html:not(.running) .ph-pause-circle,
+html:not(.running) .ph-stop-circle,
+html:not(.running) .ph-speaker-high {
+    display: none;
+
 }
